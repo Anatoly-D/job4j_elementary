@@ -14,11 +14,11 @@ public class Converter {
         System.out.println("RUB to EUR. Test is passed: " + (Converter.rublesToEUR(ruble) == outEUR));
     }
 
-    private static int rublesToEUR(int ruble) {
+    public static int rublesToEUR(int ruble) {
         return ruble / 80;
     }
 
-    private static int rublesToUSD(int ruble) {
+    public static int rublesToUSD(int ruble) {
         return ruble / 70;
     }
 }
