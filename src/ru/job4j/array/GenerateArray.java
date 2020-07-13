@@ -5,9 +5,7 @@ import java.util.Random;
 public class GenerateArray {
     public static int[] generateArray(int length) {
         int[] resultArray = new int[length];
-        Random random = new Random();
         for (int i = 0; i < length; i++) {
-            //resultArray[i] = random.nextInt(100);
             resultArray[i] = (int) (100 * Math.random());
         }
         return resultArray;
