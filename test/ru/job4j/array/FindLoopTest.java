@@ -24,4 +24,26 @@ public class FindLoopTest {
         assertThat(result, is(expect));
     }
 
+    @Test
+    public void whenFrom2To4Then6() {
+        int[] input = new int[]{5, 10, 3, 6, 12, 2, 1, 4};
+        int value = 6;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 3;
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void whenFrom2To4Then5() {
+        int[] input = new int[]{5, 10, 3, 6, 12, 2, 1, 4};
+        int value = 5;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
+
 }
