@@ -39,7 +39,7 @@ public class MatrixCheckTest {
         char[] expect = {'X', 'X', 'X'};
         assertThat(result, is(expect));
     }
-    
+
     @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {
