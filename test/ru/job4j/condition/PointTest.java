@@ -3,6 +3,7 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 public class PointTest {
@@ -19,4 +20,12 @@ public class PointTest {
 
     }
 
+    @Test
+    public void when123and425Then3p6() {
+        Point first = new Point(1, 2, 3);
+        Point second = new Point(4, 2, 5);
+
+        double expectedResult = 3.6;
+        Assert.assertEquals(expectedResult, first.distance3d(second), 0.1);
+    }
 }
