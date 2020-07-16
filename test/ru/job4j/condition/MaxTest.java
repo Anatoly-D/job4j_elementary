@@ -13,4 +13,14 @@ public class MaxTest {
         int result = Max.max(1, 2);
         assertThat(result, is(2));
     }
+
+    @Test
+    public void when4and7and5Then7() {
+        assertThat(Max.max(4, 7, 5), is(7));
+    }
+
+    @Test
+    public void when4and7and16and5Then16() {
+        assertThat(Max.max(4, 7, 16, 5), is(16));
+    }
 }
