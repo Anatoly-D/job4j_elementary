@@ -9,15 +9,13 @@ public class PointTest {
 
     @Test
     public void when0011then2() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 1;
-        int y2 = 1;
+        Point first = new Point(1, 3);
+        Point second = new Point(4, 6);
 
-        double expectedResult = 1.4;
-        double result = Point.distance(x1, y1, x2, y2);
+        double expectedResult = 4.2;
+        double result = first.distance(second);
 
-        Assert.assertEquals(expectedResult, result, 0.1);
+        Assert.assertEquals(expectedResult, result, 0.2);
 
     }
 

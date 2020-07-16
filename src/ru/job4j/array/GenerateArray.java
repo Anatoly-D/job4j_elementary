@@ -14,9 +14,9 @@ public class GenerateArray {
     public static void printArrayFormat(int[] data) {
         System.out.print("{");
         for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + ", ");
+            System.out.print(data[i] + (i == data.length - 1 ? "}\n" : ", "));
+
         }
-        System.out.print("}\n");
     }
 
     public static void main(String[] args) {
