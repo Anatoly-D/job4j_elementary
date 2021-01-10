@@ -30,7 +30,8 @@ public class Point {
     public static void main(String[] args) {
         Point first = new Point(1, 3);
         Point second = new Point(4, 6);
-        System.out.println("Distance is: " + first.distance(second));
+        double distance = first.distance(second);
+        System.out.println("Distance is: " + distance);
     }
 /*    @SuppressWarnings("checkstyle:WhitespaceAfter")
     public static void main(String[] args) {
