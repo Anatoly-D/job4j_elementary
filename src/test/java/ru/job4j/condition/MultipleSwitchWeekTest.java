@@ -14,7 +14,8 @@ class MultipleSwitchWeekTest {
         assertThat(result).isEqualTo(expected);
 
     }
-     @Test
+
+    @Test
         void whenTuesdayRuThen2() {
             String dayRus = "Вторник";
             int result = MultipleSwitchWeek.numberOfDay(dayRus);
